@@ -1,0 +1,125 @@
+[
+  {
+    "uuid": "2cc9e900-9b06-44a4-b7dd-e26eb17f8e6a",
+    "name": "Simpel formulier",
+    "internal_name": "",
+    "login_required": false,
+    "translation_enabled": false,
+    "registration_backends": [
+      {
+        "key": "backend1",
+        "name": "mail",
+        "backend": "email",
+        "options": { "to_emails": ["vijay.jawalapersad@utrecht.nl"], "attach_files_to_email": null }
+      }
+    ],
+    "authentication_backends": [],
+    "authentication_backend_options": {},
+    "auto_login_authentication_backend": "",
+    "payment_required": false,
+    "payment_backend": "",
+    "payment_backend_options": {},
+    "price_variable_key": "",
+    "appointment_options": { "is_appointment": false, "supports_multiple_products": null },
+    "literals": {
+      "previous_text": { "resolved": "Ga terug naar het formulier", "value": "" },
+      "begin_text": { "resolved": "Start het formulier", "value": "" },
+      "change_text": { "resolved": "Aanpassen", "value": "" },
+      "confirm_text": { "resolved": "Versturen", "value": "" }
+    },
+    "product": null,
+    "slug": "test-simpel",
+    "url": "http://open-forms/api/v2/forms/2cc9e900-9b06-44a4-b7dd-e26eb17f8e6a",
+    "category": "http://open-forms/api/v2/public/categories/ea650cc9-a1f7-4fe4-903e-ace280adce48",
+    "theme": null,
+    "steps": [
+      {
+        "uuid": "c9a4edd6-b2df-4590-8767-49037802a9fb",
+        "slug": "simpel-stap-1",
+        "form_definition": "Simpel stap 1",
+        "index": 0,
+        "literals": {
+          "previous_text": { "resolved": "Vorige", "value": "" },
+          "save_text": { "resolved": "Tussendoor opslaan", "value": "" },
+          "next_text": { "resolved": "Volgende", "value": "" }
+        },
+        "url": "http://open-forms/api/v2/forms/2cc9e900-9b06-44a4-b7dd-e26eb17f8e6a/steps/c9a4edd6-b2df-4590-8767-49037802a9fb",
+        "is_applicable": true
+      }
+    ],
+    "show_progress_indicator": true,
+    "show_summary_progress": false,
+    "maintenance_mode": false,
+    "active": true,
+    "activate_on": null,
+    "deactivate_on": null,
+    "is_deleted": false,
+    "submission_confirmation_template": "<p>cosign info: {{cosign_information}}</p>\n<p>&nbsp;</p>\n<p>cosign info 2: {% cosign_information %}</p>\n<p>{% if waiting_on_cosign %} WACHTEN op cosign {% endif %}</p>\n<p>hoi</p>",
+    "introduction_page_content": "",
+    "explanation_template": "",
+    "submission_allowed": "yes",
+    "suspension_allowed": true,
+    "ask_privacy_consent": "global_setting",
+    "ask_statement_of_truth": "global_setting",
+    "submissions_removal_options": {
+      "successful_submissions_removal_limit": null,
+      "successful_submissions_removal_method": "",
+      "incomplete_submissions_removal_limit": null,
+      "incomplete_submissions_removal_method": "",
+      "errored_submissions_removal_limit": null,
+      "errored_submissions_removal_method": "",
+      "all_submissions_removal_limit": null
+    },
+    "confirmation_email_template": {
+      "subject": "",
+      "content": "",
+      "translations": { "nl": { "subject": "", "content": "" }, "en": { "subject": "", "content": "" } }
+    },
+    "send_confirmation_email": true,
+    "display_main_website_link": true,
+    "include_confirmation_page_content_in_pdf": true,
+    "required_fields_with_asterisk": true,
+    "translations": {
+      "nl": {
+        "name": "Simpel formulier",
+        "submission_confirmation_template": "<p>cosign info: {{cosign_information}}</p>\n<p>&nbsp;</p>\n<p>cosign info 2: {% cosign_information %}</p>\n<p>{% if waiting_on_cosign %} WACHTEN op cosign {% endif %}</p>\n<p>hoi</p>",
+        "begin_text": "",
+        "previous_text": "",
+        "change_text": "",
+        "confirm_text": "",
+        "introduction_page_content": "",
+        "explanation_template": ""
+      },
+      "en": {
+        "name": "Your personal details (copy)",
+        "submission_confirmation_template": "",
+        "begin_text": "",
+        "previous_text": "",
+        "change_text": "",
+        "confirm_text": "",
+        "introduction_page_content": "",
+        "explanation_template": ""
+      }
+    },
+    "resume_link_lifetime": 30,
+    "hide_non_applicable_steps": true,
+    "cosign_login_options": [],
+    "cosign_login_info": null,
+    "submission_statements_configuration": [
+      {
+        "key": "privacyPolicyAccepted",
+        "label": "<p>Ja, ik heb het <a href=\"https://www.utrecht.nl/bestuur-en-organisatie/privacy/\" target=\"_blank\" rel=\"noreferrer noopener\">privacybeleid</a> gezien en geef toestemming om de gegevens die ik heb ingevuld te gebruiken voor mijn aanvraag.</p>",
+        "validate": { "required": true },
+        "type": "checkbox"
+      },
+      {
+        "key": "statementOfTruthAccepted",
+        "label": "<p>Ik heb alles eerlijk ingevuld en geen informatie weggelaten.</p>",
+        "validate": { "required": true },
+        "type": "checkbox"
+      }
+    ],
+    "submission_report_download_link_title": "Download PDF",
+    "brp_personen_request_options": null
+  }
+]

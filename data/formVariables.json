@@ -1,0 +1,17 @@
+[
+  {
+    "form": "http://open-forms/api/v2/forms/2cc9e900-9b06-44a4-b7dd-e26eb17f8e6a",
+    "form_definition": null,
+    "name": "waarde",
+    "key": "waarde",
+    "source": "user_defined",
+    "service_fetch_configuration": null,
+    "prefill_plugin": "",
+    "prefill_attribute": "",
+    "prefill_identifier_role": "main",
+    "data_type": "string",
+    "data_format": "",
+    "is_sensitive_data": false,
+    "initial_value": ""
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "name": "@frameless/open-formulieren-element",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "keywords": [],
+  "author": "",
+  "license": "EUPL-1.2",
+  "devDependencies": {
+    "@nl-design-system/eslint-config": "^0.0.1",
+    "eslint": "^9.16.0",
+    "http-server": "^14.1.1",
+    "prettier": "^3.4.2",
+    "wcag-statistieken": "link:"
+  },
+  "scripts": {
+    "start": "http-server .",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:eslint": "eslint",
+    "lint:prettier": "prettier --check",
+    "lint-fix": "pnpm run '/^lint-fix:.*/'; pnpm run prettier",
+    "lint-fix:eslint": "eslint --fix",
+    "prettier": "prettier --write ."
+  }
+}

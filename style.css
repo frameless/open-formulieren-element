@@ -1,0 +1,9 @@
+.utrecht-data-badge--groen {
+  --utrecht-data-badge-background-color: green;
+  --utrecht-data-badge-color: white;
+}
+
+.utrecht-badge-data.utrecht-badge-data--groen {
+  --utrecht-badge-background-color: green;
+  --utrecht-badge-color: white;
+}
