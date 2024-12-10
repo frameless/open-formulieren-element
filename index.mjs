@@ -24,8 +24,21 @@ const init = async () => {
   const formFields = new Map();
 
   components.reduce((fragment, component) => {
-    const el = document.createElement('utrecht-form-field-textbox');
-    el.placeholder = component.label;
+    let el;
+
+    if (component.key === 'opmerkingen' || component.type === 'textarea') {
+      // use textarea for opmerkingen
+      el = document.createElement('utrecht-form-field-textarea');
+      el.setAttribute('label', component.label);     
+      // ad rows="x"
+      el.setAttribute('rows', '4');
+    } else {
+      // Use default textbox
+      el = document.createElement('utrecht-form-field-textbox');
+      el.setAttribute('label', component.label);
+      el.placeholder = component.label;
+    }
+
     el.name = component.key;
 
     // Create a form field label and add it to the `label` slot
@@ -33,7 +46,6 @@ const init = async () => {
     // labelSpan.textContent = component.label;
     // labelSpan.slot = 'label';
     // el.appendChild(labelSpan);
-    el.setAttribute('label', component.label);
 
     if (component.validate) {
       if (component.validate.required) {
